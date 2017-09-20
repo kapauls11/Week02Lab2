@@ -4,32 +4,23 @@
         <servlet-name>LoginServlet</servlet-name>
         <servlet-class>sait.cprg352.LoginServlet</servlet-class>
     </servlet>
-    <servlet>
         <servlet-name>MainPageServlet</servlet-name>
         <servlet-class>sait.cprg352.MainPageServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
-        <url-pattern>/LoginServlet</url-pattern>
+        <url-pattern>/login</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>MainPageServlet</servlet-name>
-        <url-pattern>/logout</url-pattern>
+        <url-pattern>/MainPageServlet</url-pattern>
     </servlet-mapping>
-    <error-page>
-        <error-code>404</error-code>
-        <location>/error_404.jsp</location>
-    </error-page>
-    <error-page>
-        <exception-type>java.lang.Throwable</exception-type>
-        <location>/java.jsp</location>
-    </error-page>
     <session-config>
         <session-timeout>
             30
         </session-timeout>
     </session-config>
     <welcome-file-list>
-        <welcome-file>LoginServlet</welcome-file>
+        <welcome-file>login</welcome-file>
     </welcome-file-list>
 </web-app>
