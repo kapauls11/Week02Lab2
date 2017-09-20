@@ -12,13 +12,16 @@
         <title>Login Page</title>
     </head>
     <body>
-        <h1>Login</h1>
-          <form action="LoginServlet" method="post">
-                Username: <input type="number" name="username" value="${username}">
-                Password: <input type="number" name="password" value="${password}">
-                <input type="submit" value="login">
+       <h1>Login</h1>
+        <div>
+            <form action="Login" method="POST">
+                Username: <input type="text" name="username" ${username}><br>
+                Password: <input type="password" name="password" ${password}><br>
+                <input type="submit" value="Login">
             </form>
-          <p><i>${message}</i></p>
-         ${errorMessage}
+        </div>
+                
+        ${errorMessage}
+        ${logout}
     </body>
 </html>
